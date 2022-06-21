@@ -18,6 +18,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0 auto;
     max-width: 1250px;
+    background-color: var(--White);
 }
 header {
     display: flex;
@@ -38,7 +39,8 @@ header nav ul li {
 }
 header nav ul li a {
     text-decoration: none;
-    color: var(--GrayishBlue);
+    color: var(--DarkGrayishBlue);
+    font-weight: 700;
 }
 header .img-cart-avatar {
     display: flex;
@@ -51,13 +53,22 @@ header .img-cart-avatar .img-cart {
 header .img-cart-avatar .img-avatar {
     width: 50%;
 }
+hr {
+    color: var(--DarkGrayishBlue);
+    width: 95%;
+    margin: 0 auto;
+}
 .main-container {
     display: flex;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    height: 80vh;
+    margin-top: 120px;
+    padding: 50px;
 }
 .main-container .product-content .img-product-large {
-    width: 50%;
+    width: 80%;
+    border-radius: 5px;
+    height: auto;
 }
 .main-container .product-content .products-thumbnail {
     display: flex;
@@ -65,9 +76,80 @@ header .img-cart-avatar .img-avatar {
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    margin-top: 25px;
+    width: 80%;
+    height: auto;
 }
 .main-container .product-content .products-thumbnail img {
-    width: 24%;
+    width: 20%;
+    border-radius: 5px;
 
+}
+.main-container .text-content {
+    padding-top: 50px;
+    padding-right: 70px;
+    
+}
+.main-container .text-content .txt-Sneaker {
+    color: var(--Orange);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.main-container .text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.main-container .text-content .txt-parrafo {
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+.main-container .text-content .price {
+    color: var(--Black);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.main-container .text-content .discount {
+    background-color: var(--LightGrayishBlue);
+    margin-left: 20px;
+    padding: 9px;
+    font-weight: 400;
+    color: var(--Orange);
+}
+.main-container .text-content .original-price {
+    color: var(--DarkGrayishBlue);
+    text-decoration: line-through;
+}
+.text-content .cantidad-button {
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.text-content .cantidad-button p {
+    color: var(--Orange);
+    font-weight: 700;
+    font-size: 1.8rem;
+
+}
+.text-content .cantidad-button span {
+    color: var(--Black);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text-content .cantidad-button button {
+    background-color: var(--Orange);
+    color: var(--White);
+    margin-left: 50px;
+    padding: 15px 40px;
+    border: solid 0.1rem var(--orange);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text-content .cantidad-button img {
+    margin-right: 15px;
 }
