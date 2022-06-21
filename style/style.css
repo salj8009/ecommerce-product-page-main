@@ -16,6 +16,58 @@
 }
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1250px;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header nav ul li {
+    margin-inline: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--GrayishBlue);
+}
+header .img-cart-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .img-cart-avatar .img-cart {
+    margin-right: 50px;
+}
+header .img-cart-avatar .img-avatar {
+    width: 50%;
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.main-container .product-content .img-product-large {
+    width: 50%;
+}
+.main-container .product-content .products-thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.main-container .product-content .products-thumbnail img {
+    width: 24%;
 
-
+}
