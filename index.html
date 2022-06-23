@@ -17,6 +17,9 @@
 <body>
   <header>
     <figure>
+      <img class="img-menu" src="/images/icon-menu.svg" alt="menu">
+    </figure>
+    <figure>
       <img src="/images/logo.svg" alt="logo">      
     </figure>
     <nav>
@@ -29,13 +32,14 @@
       </ul>
     </nav>
     <div class="img-cart-avatar">
-      <img class="img-cart" src="/images/icon-cart.svg" alt="cart">
+      <img class="img-cart" src="/images/icon-cart.svg" alt="cart">      
       <figure>
         <img class="img-avatar" src="/images/image-avatar.png" alt="avatar">
       </figure> 
     </div>    
   </header>
   <hr>
+  <div id="checkout-content"></div>
   <main class="main-container">
     <section class="product-content">
       <figure>
@@ -60,13 +64,15 @@
         <p class="original-price">$250.00</p>
       </div>
       <div class="cantidad-button">
-        <p>- <span>0</span> +</p>        
-        <button>
+        <p><span class="masmenos" id="menos">-</span><span id="count-product">0</span><span class="masmenos" id="mas">+</span></p>        
+        <button id="add-to-cart">
           <img src="/images/icon-cart-White.svg" alt="">
           Add to cart
         </button>
       </div>
     </section>
   </main>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
