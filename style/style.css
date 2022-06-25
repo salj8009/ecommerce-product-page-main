@@ -160,16 +160,45 @@ hr {
 .text-content .cantidad-button img {
     margin-right: 15px;
 }
-#checkout-content {
+.checkout-content {
     color: var(--Orange);
     position: absolute;
     z-index: 3;
     border: solid 1px;
-    
+    width: 340px;
+    height: 195px;
+    left: 65%;
 }
-    
-    
+.p-cart {
+    color: var(--Black);
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    position: absolute;
+    padding: 12px;
+    left: 65%;
 }
+.p-text {
+    color: var(--DarkGrayishBlue);
+    display: block;
+    position: absolute;
+    margin-top: 106px;
+    margin-left: 104px;
+    left: 65%;
+}
+.hr-container-checkout {
+    margin-top: 50px;
+    z-index: 3;
+    position: absolute;
+    width: 340px;
+    left: 65%;
+}
+
+.p-checkout {
+    color: var(--Black);
+    margin-top: 50px;
+}   
+
 
 
 @media (max-width: 375px) {
