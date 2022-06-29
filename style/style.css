@@ -165,9 +165,10 @@ hr {
     position: absolute;
     z-index: 3;
     border: solid 1px;
-    width: 340px;
+    width: 350px;
     height: 195px;
     left: 65%;
+    margin-top: 140px;
 }
 .p-cart {
     color: var(--Black);
@@ -176,7 +177,7 @@ hr {
     display: block;
     position: absolute;
     padding: 12px;
-    left: 65%;
+   
 }
 .p-text {
     color: var(--DarkGrayishBlue);
@@ -184,14 +185,19 @@ hr {
     position: absolute;
     margin-top: 106px;
     margin-left: 104px;
-    left: 65%;
+    
+}
+.btn-cancel {
+    position: relative;
+    float: right;
+    margin: 15px;
 }
 .hr-container-checkout {
     margin-top: 50px;
     z-index: 3;
     position: absolute;
-    width: 340px;
-    left: 65%;
+    width: 348px;
+    
 }
 
 .p-checkout {
@@ -199,7 +205,27 @@ hr {
     margin-top: 50px;
 }   
 
-
+.contentDivPago {
+    border: solid 1px blue;
+    width: 340px;
+    height: 139px;
+    position: absolute;
+    left: 65%;
+    margin-top: 53px;
+}
+.imagen-product {
+    position: absolute;
+    left: 65%;
+    margin-top: 63px;
+    width: 4%;
+}
+.parrafo-title {
+    position: absolute;
+    left: 65%;
+    margin-top: 63px;
+    margin-left: 80px;
+    color: var(--DarkGrayishBlue);    
+}
 
 @media (max-width: 375px) {
     body {

@@ -38,14 +38,22 @@ const fragment = document.createDocumentFragment();
 
 addToCart.addEventListener('click' , () => {
     
-    createElementsCheckout();
+    //createElementsCheckout();
+    createContentPAgo();
     
     console.log('btn add to cart');
 });
 
+const dialog = document.querySelector('dialog')
+const btncancelar = document.getElementById('cancel');
+
 imgCart.addEventListener('click' , () => {
-    createElementsCheckout();
+  
+    //createElementsCheckout();
+    dialog.showModal();
 });
+
+cancel.addEventListener('click',() => dialog.close());
 
 const createElementsCheckout = () => {
     const divcontent = document.createElement('DIV');
@@ -66,10 +74,35 @@ const createElementsCheckout = () => {
     fragment.appendChild(hr);
     fragment.appendChild(ptext);
 
-    checkoutontent.appendChild(fragment);
-  
+    checkoutontent.appendChild(fragment);  
 }
 
+/*const createContentPAgo = () => {
+    const contentDivPago =document.createElement('DIV');
+    let imagenProduct = document.createElement('IMG');
+    const parrafoTitle = document.createElement('P');
+    const spanPrecio = document.createElement('SPAN');
+    const spanPago = document.createElement('SPAN');
+    const imagentrash = document.createElement('IMG');
+    const btnPago = document.createElement('BUTTON');
+
+    contentDivPago.classList.add('contentDivPago');
+    imagenProduct.classList.add('imagen-product');
+    parrafoTitle.classList.add('parrafo-title');
+
+    parrafoTitle.innerText = `Fall Limited Edition Sneakers`;
+
+    imagenProduct.src = '/images/image-product-1-thumbnail.jpg';
+
+    fragment.appendChild(contentDivPago);
+    fragment.appendChild(imagenProduct);
+    fragment.appendChild(parrafoTitle);
+
+    
+
+    checkoutontent.appendChild(fragment);
+
+}*/
 /**
     const divcontent = document.createElement('DIV');
     const parrafo = document.createElement('P');
