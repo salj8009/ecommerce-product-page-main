@@ -22,7 +22,8 @@
     <figure>
       <img src="/images/logo.svg" alt="logo">      
     </figure>
-    <nav>
+    <nav class="nav-menu">
+      <span>x</span>
       <ul>
         <li><a href="/">Collections</a></li>
         <li><a href="/">Men</a></li>
@@ -31,25 +32,29 @@
         <li><a href="/">Contact</a></li>
       </ul>
     </nav>
-    <div class="img-cart-avatar">
       <img id="imgCart" class="img-cart" src="/images/icon-cart.svg" alt="cart">      
-      <figure>
+      
         <img class="img-avatar" src="/images/image-avatar.png" alt="avatar">
-      </figure> 
-    </div>    
+          
   </header>
   <hr>
   <dialog class="checkout-content">
     <p class="p-cart">Cart</p>
     <hr class="hr-container-checkout">
-    <p class="p-text">You cart is empty</p>
+    <p class="p-text ">You cart is empty</p>    
+    <p class="p-price"></p>
     <button class="btn-cancel" id="cancel">Salir</button>
+    <div id="checkout-content-price"></div>
   </dialog>
-  <div id="checkout-content"></div>
+  
   <main class="main-container">
     <section class="product-content">
       <figure>
         <img class="img-product-large" src="/images/image-product-1.jpg" alt="producto">
+        <div class="flechas-container">
+          <img class="img-flechas" src="./images/icon-previous.svg" alt="previous">
+          <img class="img-flechas" src="./images/icon-next.svg" alt="next">
+        </div>        
       </figure>
       <div class="products-thumbnail">
         <img src="/images/image-product-1-thumbnail.jpg" alt="producto">
@@ -59,26 +64,26 @@
       </div>
     </section>
     <section class="text-content">
-      <p class="txt-Sneaker">Sneaker Company</p>
-      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="txt-Sneaker">SNEAKER COMPANY</p>
+      <h1 class="text-content__title">Fall Limited Edition Sneakers</h1>
       <p class="txt-parrafo">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-      <div>
+      <div class="price-descuento-container">
         <span class="price">$125.00</span>
         <span class="discount">50%</span>
         <p class="original-price">$250.00</p>
       </div>
       <div class="cantidad-button">
         <p><span class="masmenos" id="menos">-</span><span id="count-product">0</span><span class="masmenos" id="mas">+</span></p>        
-        <button id="add-to-cart">
-          <img src="/images/icon-cart-White.svg" alt="">
+        <button class="add-to-cart-btn " id="add-to-cart">
+          <img src="/images/icon-cart-White.svg" alt="cart-icon">
           Add to cart
         </button>
       </div>
     </section>
   </main>
 
-  <script src="/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
