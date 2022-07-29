@@ -22,8 +22,8 @@
     <figure>
       <img src="/images/logo.svg" alt="logo">      
     </figure>
-    <nav class="nav-menu">
-      <span>x</span>
+    <nav class="nav-menu oculto">
+      <span id="menu-mobileX">x</span>
       <ul>
         <li><a href="/">Collections</a></li>
         <li><a href="/">Men</a></li>
@@ -33,19 +33,34 @@
       </ul>
     </nav>
       <img id="imgCart" class="img-cart" src="/images/icon-cart.svg" alt="cart">      
-      
-        <img class="img-avatar" src="/images/image-avatar.png" alt="avatar">
+        <span class="number-of-products oculto">3</span>
+      <img class="img-avatar" src="/images/image-avatar.png" alt="avatar">
           
   </header>
   <hr>
-  <dialog class="checkout-content">
+  <dialog class="checkout-content dialog-container">
     <p class="p-cart">Cart</p>
+    <button class="btn-cancel" id="dialog-cancel">Salir</button>
     <hr class="hr-container-checkout">
     <p class="p-text ">You cart is empty</p>    
-    <p class="p-price"></p>
-    <button class="btn-cancel" id="cancel">Salir</button>
+    <p class="p-price"></p>    
     <div id="checkout-content-price"></div>
   </dialog>
+
+  <dialog class="dialog-container-products">
+    <p class="p-cart">Cart</p>
+    <button class="btn-cancel cancel-con-Products">Salir</button>
+    <hr class="hr-container-checkout">
+    <div class="content-cart-artuiculo">
+        <div class="container-price-total visible">
+           <img src="./images/image-product-1-thumbnail.jpg" alt="product">
+            <p class="parrfo1">Autumn Limited Edition...<br>
+            $125.00 x <span class="cantidad-productos">0</span> <span class="price-final">000.00</span></p>
+            <img class="img-thash" src="./images/icon-delete.svg" alt="delete"> 
+        </div>                
+        <button class="btn-checkout">Checkout</button>
+    </div>                              
+</dialog>
   
   <main class="main-container">
     <section class="product-content">
